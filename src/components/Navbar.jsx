@@ -11,18 +11,17 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   }
   return (
-    <div className="flex flex-col justify-between bg-green-400">
-     
-      <div className="md:hidden">
+    <div className="">
+      <div className="md:hidden bg-amber-400">
         {isOpen ? (
           <IoMdClose size={30} onClick={toggleMenu} />
         ) : (
           <GiHamburgerMenu size={30} onClick={toggleMenu} />
         )}
       </div>
-       <div>
+      <div>
         {isOpen && (
-          <ul>
+          <ul className="md:flex md:flex-row items-center gap-10">
             {headerData.map((d, i) => {
               return (
                 <li>{d.title}</li>
@@ -31,7 +30,7 @@ export default function Navbar() {
           </ul>
         )}
       </div>
-     
+
 
     </div>
   )
