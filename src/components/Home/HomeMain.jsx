@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Buttons from './Buttons'
+import CardMain from '../Card/CardMain'
 
 export default function MainHome() {
 
@@ -25,6 +26,7 @@ export default function MainHome() {
           alt="Picture of the author"
         />
       </div>
+      <CardMain/>
 
     </section>
   )
