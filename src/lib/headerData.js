@@ -1,7 +1,7 @@
 export const headerData = [
-    { title: "E-books" },
-    { title: "Audiobooks" },
-    { title: "Apps&Readers" },
-    { title: "Contacts" }
+    { title: "E-books",link:"/books" },
+    { title: "Audiobooks",link:"/#" },
+    { title: "Apps&Readers",link:"/#" },
+    { title: "Contacts",link:"/#" }
   ];
   

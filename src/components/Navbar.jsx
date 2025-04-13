@@ -4,6 +4,7 @@ import { IoMdClose } from 'react-icons/io';
 import { useState } from 'react';
 import { headerData } from '@/lib/headerData';
 import SignIn from './Sign-in';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,10 @@ export default function Navbar() {
           <ul className="md:flex md:flex-row items-center gap-10">
             {headerData.map((d, i) => {
               return (
+                <Link href={d.link}
+                key={i}>
                 <li>{d.title}</li>
+                </Link>
               )
             })}
           </ul>

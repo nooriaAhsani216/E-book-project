@@ -1,10 +1,18 @@
 import React from 'react'
 import { cardData } from '@/lib/cardData'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CardList(props) {
   return (
     <div className=" min-h-screen">
+          <div className="flex justify-between m-3 items-center bg-amber-400">
+    <p>Today's Hits </p>
+     <Link href="/contact">
+     <button className="px-5 py-2 rounded-full text-lg bg-rose-200 hover:bg-rose-400 hover:text-white">
+        View all
+      </button></Link>
+    </div>
     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
         {cardData.map((card, i) => (
           <li
