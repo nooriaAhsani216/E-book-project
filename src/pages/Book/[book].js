@@ -8,7 +8,7 @@ export default function Book() {
 
   return (
     <div>
-    
+    <CardMain/>
     </div>
   )
 }

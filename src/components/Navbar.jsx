@@ -13,15 +13,15 @@ export default function Navbar() {
   }
   return (
     <div className="">
-      <div className="md:hidden bg-amber-400">
+      {/* <div className="md:hidden bg-amber-400">
         {isOpen ? (
           <IoMdClose size={30} onClick={toggleMenu} />
         ) : (
           <GiHamburgerMenu size={30} onClick={toggleMenu} />
         )}
       </div>
-      <div>
-        {isOpen && (
+      <div> */}
+        {/* {isOpen && (
           <ul className="md:flex md:flex-row items-center gap-10">
             {headerData.map((d, i) => {
               return (
@@ -32,10 +32,20 @@ export default function Navbar() {
               )
             })}
           </ul>
-        )}
+        )} */}
+        <ul className="md:flex md:flex-row items-center gap-10">
+            {headerData.map((d, i) => {
+              return (
+                <Link
+                className="hover:underline"
+                 href={d.link}
+                key={i}>
+                <li>{d.title}</li>
+                </Link>
+              )
+            })}
+          </ul>
       </div>
-
-
-    </div>
+    // </div>
   )
 }

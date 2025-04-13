@@ -6,7 +6,7 @@ export default function Buttons() {
 
 
   return (
-    <div className="flex flex-col md:grid grid-cols-2 gap-5">
+    <div className="flex flex-col md:grid grid-cols-2 gap-5 ">
       <button className={btnClass}>Try for Free</button>
       <button className={btnClass}>View categories</button>
     </div>

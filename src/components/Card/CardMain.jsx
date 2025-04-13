@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function CardMain() {
   return (
     <div className="px-5">
-      
+      <p>Hi</p>
     </div>
   )
 }
