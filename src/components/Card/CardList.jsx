@@ -9,7 +9,7 @@ export default function CardList() {
           <div className="flex justify-between m-3 items-center bg-amber-400">
     <p>Today's Hits </p>
      <Link href="/contact">
-     <button className="px-5 py-2 rounded-full text-lg bg-rose-200 hover:bg-rose-400 hover:text-white">
+     <button className="px-5 py-2 rounded-full text-lg bg-[#6B4226] text-[#FAF3E0] hover:bg-[#FAF3E0] hover:text-[#6B4226]">
         View all
       </button></Link>
     </div>

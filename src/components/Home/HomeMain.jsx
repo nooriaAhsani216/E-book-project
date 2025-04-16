@@ -7,15 +7,15 @@ import CardList from '../Card/CardList'
 export default function MainHome() {
 
   return (
-    <section className='flex items-center justify-center min-h-screen bg-fixed bg-center bg-cover custom-img bg-black/70'>
+    <section className="flex items-center justify-center min-h-screen bg-fixed bg-center bg-cover bg-[url('/image/download.jpeg')] bg-black/70">
       {/* first section */}
-    <div className=' bg-pink-100 grid items-center justify-between md:grid md:grid-cols-2 md:p-5'>
+    <div className="grid items-center justify-between md:grid md:grid-cols-2 md:p-5">
     <div>
       <FirstSection/>
        </div>
     </div>
     <div>
-    <CardList/>
+    {/* <CardList/> */}
     </div>
     </section>
   )
