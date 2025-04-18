@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Buttons from './Buttons'
 import FirstSection from './First-section'
-import CardList from '../Card/CardList'
+import CardList from '../Card/BookList'
 
 export default function MainHome() {
 

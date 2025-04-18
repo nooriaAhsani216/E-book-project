@@ -11,7 +11,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full fixed top-0 left-0 bg-[#6B4226] text-[#FAF3E0] shadow-md z-50">
+    <div className="w-full left-0 bg-[#6B4226] text-[#FAF3E0] shadow-md z-50">
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4'> 
         <Link href="/">
           <h1 className="font-bold text-2xl cursor-pointer">BookByte</h1>
