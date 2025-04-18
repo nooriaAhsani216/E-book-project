@@ -11,8 +11,8 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full left-0 bg-[#6B4226] text-[#FAF3E0] shadow-md z-50">
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4'> 
+    <div className="fixed top-0 left-0 w-full bg-[#6B4226] text-[#FAF3E0] shadow-md z-50">
+      <div className='max-w-[1240px] m-auto flex justify-between items-center pt-10'> 
         <Link href="/">
           <h1 className="font-bold text-2xl cursor-pointer">BookByte</h1>
         </Link>
@@ -27,8 +27,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className=" hidden sm:block bg-amber-100">
-          <Buttons text="Sign In"/>
+        <div className="hidden sm:flex sm:gap-4 ">
+          <Buttons text="Sign In" className='px-2 sm:w-auto w-0'/>
           <Buttons text="Try for free" />
         </div>
 
@@ -40,9 +40,8 @@ export default function Navbar() {
           )}
         </div>
       </div>
-
       {isOpen && (
-        <div className='w-[70%] bg-[#FAF3E0] text-[#6B4226] text-2xl rounded-tr-4xl rounded-br-4xl  h-screen z-50 sm:hidden '>
+        <div className='sm:hidden fixed left-0 w-[80%] bg-[#FAF3E0] text-[#6B4226] text-2xl rounded-tr-4xl rounded-br-4xl  h-screen z-50 shadow-lg transition-all duration-300 ease-in-out'>
           <ul className="p-6 gap-5 ">
             {headerData.map((d, i) => (
               <li key={i} className='p-2'>
@@ -51,8 +50,8 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li className='bg-amber-300'>
-              <SignIn />
+            <li className=''>
+              <Buttons/>
             </li>
           </ul>
         </div>

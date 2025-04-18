@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function BookList() {
   return (
-    <div className=" min-h-screen px-10">
+    <div className="items-center h-screen px-10">
       {/* Top-section */}
      
       {/* BookList-section */}

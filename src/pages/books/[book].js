@@ -12,7 +12,7 @@ export default function Book() {
     {bookItem ? ( <div className="min-h-[60vh] bg-amber-100 py-10 px-6 flex flex-col items-center">
       {/* Back Button */}
       <button
-        onClick={() => router.push('/books')}
+        onClick={() => router.push('/bookPage')}
         className=" px-6 py-2 rounded-full bg-[#6B4226] text-white hover:bg-[#4A2F1B] transition-colors duration-300"
       >
         ← Back

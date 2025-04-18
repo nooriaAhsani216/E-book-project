@@ -5,10 +5,8 @@ import SignIn from './Sign-in'
 
 export default function Header() {
   return (
-    <div className="w-full p-5 ">
-    
+    <div className="">
       <Navbar />
-    
     </div>
   )
 }
