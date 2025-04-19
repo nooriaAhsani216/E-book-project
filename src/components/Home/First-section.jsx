@@ -3,9 +3,9 @@ import Buttons from './Buttons'
 
 export default function FirstSection() {
   return (
-    <div>
+    <div className='w-full max-w-3xl mx-auto px-4 bg-amber-50'>
       <div className="grid  md:grid-cols-1">
-        <div className='p-10'>
+        <div className='py-5 m-5'>
           <h2 className="text-3xl">
             Listen to audiobooks for
             <span className="block text-2xl md:text-4xl font-bold text-black">

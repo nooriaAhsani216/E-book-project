@@ -5,10 +5,11 @@ import Image from 'next/image';
 
 export default function Book() {
   const router = useRouter();
-  const {book} = router.query;
-  const bookItem = bookData.find((item =>item.id === Number(book)));
+  const {id} = router.query;
+  const bookItem = bookData.find((item =>item.id === Number(id)));
   return (
-   <div>
+   <div className='items-center'>
+    
     {bookItem ? ( <div className="min-h-[60vh] bg-amber-100 py-10 px-6 flex flex-col items-center">
       {/* Back Button */}
       <button

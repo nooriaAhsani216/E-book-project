@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import MainHome from "@/components/Home/HomeMain";
-import CardMain from "@/components/Book/MainBook";
-import CardList from "@/components/Book/BookList";
+import CardMain from "@/components/books/MainBook";
+import CardList from "@/components/books/BookList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

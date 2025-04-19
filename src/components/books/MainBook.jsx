@@ -4,7 +4,7 @@ import TopBook from './Top-book'
 
 export default function MainBook() {
   return (
-    <div className="">
+    <div className="min-h-screen bg-amber-100 hidden">
       <TopBook/>
       <BookList/>
     </div>
