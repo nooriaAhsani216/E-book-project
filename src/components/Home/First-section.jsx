@@ -3,7 +3,7 @@ import Buttons from './Buttons'
 
 export default function FirstSection() {
   return (
-    <div className='w-full max-w-3xl mx-auto px-4 bg-amber-50'>
+    <div className='w-full max-w-3xl mx-auto px-4 '>
       <div className="grid  md:grid-cols-1">
         <div className='py-5 m-5'>
           <h2 className="text-3xl">

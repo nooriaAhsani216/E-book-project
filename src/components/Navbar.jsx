@@ -53,7 +53,8 @@ export default function Navbar() {
       </Link>
         </li>
       ))}
-      <li>
+     <div className='ml-4 space-y-5'>
+     <li>
         <button
           className="w-full text-left hover:underline"
         >
@@ -62,11 +63,12 @@ export default function Navbar() {
       </li>
       <li>
         <button
-          className="w-full text-left hover:underline"
+          className=" hover:underline"
         >
           Try for free
         </button>
       </li>
+     </div>
     </ul>
   </div>
 )}

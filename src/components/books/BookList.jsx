@@ -6,7 +6,7 @@ import TopBook from './Top-book'
 
 export default function BookList() {
   return (
-    <div className="h-screen mt-20 p-8">
+    <div className="min-h-screen mt-16 p-8">
       {/* Top-section */}
      <TopBook/>
       {/* BookList-section */}

@@ -8,19 +8,12 @@ export default function Book() {
   const {id} = router.query;
   const bookItem = bookData.find((item =>item.id === Number(id)));
   return (
-   <div className='items-center'>
+   <div className='mt-16'>
     
-    {bookItem ? ( <div className="min-h-[60vh] bg-amber-100 py-10 px-6 flex flex-col items-center">
-      {/* Back Button */}
-      <button
-        onClick={() => router.push('/bookPage')}
-        className=" px-6 py-2 rounded-full bg-[#6B4226] text-white hover:bg-[#4A2F1B] transition-colors duration-300"
-      >
-        ← Back
-      </button>
-
+    {bookItem ? ( 
+      <div className="h-screen bg-amber-100 py-10 px-6 flex flex-col items-center">
       {/* Book Card */}
-      <div className="bg-white shadow-2xl rounded-2xl p-6 max-w-4xl w-full flex flex-col md:flex gap-8">
+      <div className="bg-white shadow-2xl rounded-2xl p-6 max-w-4xl flex flex-col md:flex gap-8">
         {/* Book Image */}
         <div className="relative w-full md:w-1/2 aspect-[2/3] rounded-xl overflow-hidden">
           <Image
@@ -32,9 +25,9 @@ export default function Book() {
         </div>
 
         {/* Book Info */}
-        <div className="flex flex-col justify-between w-full md:w-1/2">
+        <div className="flex flex-col justify-between ">
           <div>
-            <h1 className="text-3xl font-bold text-[#4A2F1B] mb-2">
+            <h1 className=" text-sm md:text-3xl font-bold text-[#4A2F1B] mb-2">
               {bookItem.title}
             </h1>
             <p className="text-lg italic text-gray-600 mb-4">
@@ -42,9 +35,17 @@ export default function Book() {
             </p>
           </div>
         </div>
+        <button
+        onClick={() => router.push('/booksPage')}
+        className="text-center px-4 py-2 rounded-full bg-[#6B4226] text-white hover:bg-[#4A2F1B] transition-colors duration-300"
+      >
+        ← Back
+      </button>
       </div>
     </div>): (
-      <p className='text-2xl text-red-500'>Book Not Found</p>
+     <div className='flex items-center justify-center h-screen'>
+       <p className='text-2xl text-red-500 text-center'>Book Not Found</p>
+      </div>
     )}
    </div>
   )
