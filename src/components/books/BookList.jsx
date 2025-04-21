@@ -10,7 +10,7 @@ export default function BookList() {
       {/* Top-section */}
      <TopBook/>
       {/* BookList-section */}
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 gap-6">
         {bookData.map((item) => (
           <li
             key={item.id}
