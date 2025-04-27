@@ -6,7 +6,7 @@ import TopBook from './Top-book'
 
 export default function BookList() {
   return (
-    <div className="min-h-screen mt-16 p-8">
+    <div className="min-h-screen mt-16 p-8 bg-white">
       {/* Top-section */}
      <TopBook/>
       {/* BookList-section */}
@@ -16,10 +16,10 @@ export default function BookList() {
             key={item.id}
             className="bg-white rounded-2xl shadow-md hover:shadow-xl overflow-hidden transform hover:-translate-y-1 transition-all duration-300 group"
           >
-            <Link href={`/booksPage/${item.id}`}>
+            <Link href={`/books/${item.id}`}>
               <div>
                 {/* Image section */}
-                <div className="relative w-full aspect-[2/3]">
+                <div className="relative w-full aspect-[3/3] sm:aspect-[2/3]">
                   <Image
                     src={item.image}
                     alt={item.title}
