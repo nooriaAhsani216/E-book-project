@@ -9,7 +9,6 @@ export default function Book() {
   const bookItem = bookData.find((item =>item.id === Number(id)));
   return (
    <div className=' container mt-20'>
-    
     {bookItem ? ( 
       <div className="min-h-screen bg-white py-10 px-6 flex flex-col items-baseline">
       {/* Book Card */}

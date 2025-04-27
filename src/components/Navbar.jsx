@@ -30,7 +30,7 @@ export default function Navbar() {
 
 
         <div className="hidden lg:flex gap-4">
-          <Buttons text="Sign In" className='w-auto' />
+          <Buttons text="Sign In" className='w-auto'/>
           <Buttons text="Try for free" />
         </div>
         <div className='block lg:hidden'>
