@@ -8,7 +8,7 @@ export default function Book() {
   const {id} = router.query;
   const bookItem = bookData.find((item =>item.id === Number(id)));
   return (
-   <div className=' container mt-20'>
+   <div className='container mt-20'>
     {bookItem ? ( 
       <div className="min-h-screen bg-white py-10 px-6 flex flex-col items-baseline">
       {/* Book Card */}
@@ -32,6 +32,7 @@ export default function Book() {
             <p className="text-lg italic text-black">
               {bookItem.author}
             </p>
+            <p className="text-gray-800 leading-relaxed">{bookItem.description}</p>
           </div>
         </div>
         <button

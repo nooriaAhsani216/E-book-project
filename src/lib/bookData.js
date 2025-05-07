@@ -4,6 +4,7 @@ export const bookData = [
     image: "/image/405245844resize_cover_502539.png",
     title: "Echoes of Eternity",
     author: "Alexander Frost",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quisquam sunt excepturi. Inventore, quae veniam? Ut nulla quibusdam tempore et, magnam laborum beatae! Beatae repellendus molestias corporis officia atque."
   },
   {
     id: 2,

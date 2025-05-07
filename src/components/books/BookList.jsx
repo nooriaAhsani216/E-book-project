@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { bookData } from '@/lib/bookData'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import TopBook from './Top-book'
+const ENDPOINT = "http://localhost:3000/api/books";
 
 export default function BookList() {
+  
+  const [books,setBooks] = useState([]);
+  useEffect(()=>{
+    async function fetchBooks () {
+      const res = await fetch('http://localhost:3000/api/books'); 
+      const data = await res.json();
+      setBooks(data)
+    }
+    fetchBooks();
+  },[])
+
   return (
     <div className="min-h-screen mt-16 p-8 bg-white">
       {/* Top-section */}
      <TopBook/>
       {/* BookList-section */}
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 gap-6">
-        {bookData.map((item) => (
+        {books.map((item) => (
           <li
             key={item.id}
             className="bg-white rounded-2xl shadow-md hover:shadow-xl overflow-hidden transform hover:-translate-y-1 transition-all duration-300 group"

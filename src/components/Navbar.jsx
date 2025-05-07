@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  } 
+  }
 
   return (
     <div className="fixed top-0 left-0 w-full bg-white text-black shadow-md z-50">
@@ -30,7 +30,9 @@ export default function Navbar() {
 
 
         <div className="hidden lg:flex gap-4">
-          <Buttons text="Sign In" className='w-auto'/>
+          <Link href="/sign-up">
+            <Buttons text="Sign Up" className='w-auto' />
+          </Link>
           <Buttons text="Try for free" />
         </div>
         <div className='block lg:hidden'>
@@ -59,9 +61,9 @@ export default function Navbar() {
             <div className='ml-4 space-y-5'>
               <li>
                 <button
-                  className="w-full text-left hover:underline"
+                  className="w-full text-left hover:underline "
                 >
-                  Sign In
+                  Sign Up
                 </button>
               </li>
               <li>
