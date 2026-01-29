@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import TopBook from './Top-book'
 
-const ENDPOINT = "http://localhost:3000/api/books";
+const ENDPOINT = "/api/books";
 
 export default function BookList() {
   const [books, setBooks] = useState([]);
