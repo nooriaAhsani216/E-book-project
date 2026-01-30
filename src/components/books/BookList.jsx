@@ -19,13 +19,13 @@ export default function BookList() {
 
   return (
    <div>
-     <div className='container mx-auto p-4 '>
+     <div className='container mx-auto p-4'>
       {/* Top section */}
-      {/* <TopBook /> */}
+      <TopBook />
       {/* Book list */}
       <ul className='grid lg:grid-cols-6 gap-4'>
         {books.map((item) => (
-          <li key={item.id} className='border rounded-xl bg-amber-50 '>
+          <li key={item.id}  className='border rounded-xl  flex flex-col items-center bg-white/90 hover:shadow-lg transition-all duration-200'>
             <Link href={`/books/${item.id}`}>
              <div className="flex flex-col h-full overflow-hidden rounded-2xl">
                 <div className='flex justify-center items-center w-full object-cover'>

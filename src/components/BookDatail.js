@@ -13,7 +13,7 @@ export default function BookDatail() {
         })
     }, [])
   return (
-    <div className='mt-50'>
+    <div className='mt-50 bg-black'>
      <ul>
         {bookData.map((book,i)=>{
             return(
